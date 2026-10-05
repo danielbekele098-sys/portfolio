@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Bekele | Electrical Technician & HV Winding Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0B0F17',
+                        brandSurface: '#111827',
+                        brandCard: '#1F2937',
+                        brandGold: '#D4AF37',
+                        brandGoldHover: '#E5C158',
+                        brandText: '#E5E7EB',
+                        brandMuted: '#9CA3AF'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF099 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.15);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0B0F17;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1F2937;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-brandText font-sans antialiased custom-scrollbar selection:bg-brandGold selection:text-brandDark min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b border-gray-800/80 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="group flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-brandGold to-amber-700 flex items-center justify-center text-brandDark font-extrabold font-heading text-xl shadow-lg transition-transform group-hover:scale-105">
+                        DB
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg tracking-wide text-white group-hover:text-brandGold transition-colors">DANIEL BEKELE</span>
+                        <span class="text-xs text-brandMuted uppercase tracking-widest font-mono">HV Winding Specialist</span>
+                    </div>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-brandMuted hover:text-brandGold transition-colors py-1">About</a>
+                    <a href="#gallery" class="text-brandMuted hover:text-brandGold transition-colors py-1">Work Gallery</a>
+                    <a href="#experience" class="text-brandMuted hover:text-brandGold transition-colors py-1">Experience</a>
+                    <a href="#skills" class="text-brandMuted hover:text-brandGold transition-colors py-1">Skills</a>
+                    <a href="#education" class="text-brandMuted hover:text-brandGold transition-colors py-1">Education</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-lg border border-brandGold/40 text-brandGold hover:bg-brandGold hover:text-brandDark font-semibold transition-all shadow-sm hover:shadow-brandGold/20">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-brandMuted hover:text-brandGold focus:outline-none p-2" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brandSurface border-b border-gray-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-brandMuted hover:text-brandGold font-medium">About</a>
+            <a href="#gallery" class="block py-2 text-brandMuted hover:text-brandGold font-medium">Work Gallery</a>
+            <a href="#experience" class="block py-2 text-brandMuted hover:text-brandGold font-medium">Experience</a>
+            <a href="#skills" class="block py-2 text-brandMuted hover:text-brandGold font-medium">Skills</a>
+            <a href="#education" class="block py-2 text-brandMuted hover:text-brandGold font-medium">Education</a>
+            <a href="#contact" class="block text-center py-3 mt-2 rounded-lg bg-brandGold text-brandDark font-bold">Get In Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.08),transparent_50%)]"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brandGold/10 border border-brandGold/30 text-brandGold text-xs font-bold tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span>
+                        <span>Transformer HV Winding Specialist</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none uppercase font-heading">
+                        DANIEL <br>
+                        <span class="gold-gradient-text">BEKELE</span>
+                    </h1>
+
+                    <p class="text-xl text-brandGold font-medium italic">
+                        Electrical Technician & Transformer High Voltage Winding Specialist
+                    </p>
+
+                    <p class="text-brandMuted text-base sm:text-lg leading-relaxed max-w-2xl">
+                        I am a hands-on electrical technician with practical expertise focused on High Voltage (HV) winding for power transformers, supported by Level III training in Industrial Machine Electrical Drive Control Technology.
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <a href="#contact" class="px-7 py-3.5 rounded-lg bg-brandGold text-brandDark font-bold hover:bg-brandGoldHover transition-all flex items-center space-x-2 shadow-lg shadow-brandGold/10">
+                            <span>Contact Me</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#gallery" class="px-7 py-3.5 rounded-lg bg-brandCard text-white hover:bg-gray-800 border border-gray-700/80 font-semibold transition-all flex items-center space-x-2">
+                            <i class="fa-solid fa-images text-brandGold"></i>
+                            <span>View Practical Work</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-sm rounded-2xl bg-gradient-to-b from-brandGold/20 via-brandCard to-brandSurface p-1 gold-border-glow">
+                        <div class="rounded-xl bg-brandSurface overflow-hidden p-6 text-center space-y-4">
+                            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-brandGold/50 shadow-inner">
+                                <img src="work3.jpg" alt="Daniel Bekele" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Daniel Bekele</h3>
+                                <p class="text-xs text-brandGold uppercase font-mono tracking-widest mt-1">HV Winding Specialist</p>
+                            </div>
+                            <div class="pt-3 border-t border-gray-800 text-xs text-brandMuted flex justify-around">
+                                <div>
+                                    <span class="block font-bold text-white text-sm">Level III</span>
+                                    <span>Certification</span>
+                                </div>
+                                <div class="border-r border-gray-800"></div>
+                                <div>
+                                    <span class="block font-bold text-white text-sm">2024</span>
+                                    <span>Graduation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="space-y-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+
+        <!-- About Me & Core Approach -->
+        <section id="about" class="grid md:grid-cols-12 gap-8 items-stretch">
+            <div class="md:col-span-6 bg-brandSurface rounded-2xl p-8 border border-gray-800/80 flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold font-mono tracking-widest text-brandGold uppercase mb-2">ABOUT ME</div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-6 uppercase tracking-snug">
+                        PRACTICAL EXPERIENCE & PRECISION
+                    </h2>
+                    <div class="space-y-4 text-brandMuted leading-relaxed">
+                        <p>
+                            I hold a Level III qualification in Industrial Machine Electrical Drive Control Technology from Adama Polytechnic College. My main practical career specialization is centered on High Voltage (HV) winding for power transformers.
+                        </p>
+                        <p>
+                            Working directly on transformer winding machines has built my strong commitment to operational accuracy, disciplined process adherence, strict insulation quality, and industrial safety.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="approach" class="md:col-span-6 bg-brandCard rounded-2xl p-8 border border-brandGold/20 gold-border-glow flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold font-mono tracking-widest text-brandGold uppercase mb-2">METHODOLOGY</div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">CORE APPROACH</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brandGold/10 border border-brandGold/30 flex items-center justify-center text-brandGold shrink-0">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Precision Winding</h3>
+                                <p class="text-sm text-brandMuted mt-1">Maintaining exact layer tension, proper insulation alignment, and turn-ratio accuracy.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brandGold/10 border border-brandGold/30 flex items-center justify-center text-brandGold shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Safety First</h3>
+                                <p class="text-sm text-brandMuted mt-1">Full compliance with factory safety standards and industrial equipment protocols.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brandGold/10 border border-brandGold/30 flex items-center justify-center text-brandGold shrink-0">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Quality Assurance</h3>
+                                <p class="text-sm text-brandMuted mt-1">Checking each winding stage to ensure reliability and long-term performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Work Gallery -->
+        <section id="gallery" class="bg-brandSurface rounded-2xl p-8 sm:p-10 border border-gray-800 space-y-8">
+            <div>
+                <div class="text-xs font-bold font-mono tracking-widest text-brandGold uppercase mb-2">FIELD WORK & OPERATIONS</div>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white uppercase tracking-tight">PRACTICAL WORK GALLERY</h2>
+                <p class="text-brandMuted text-sm sm:text-base mt-2">Real industrial factory environment experience in High Voltage (HV) winding setup and execution.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="group bg-brandCard rounded-xl overflow-hidden border border-gray-800 hover:border-brandGold/50 transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="work1.jpg" alt="Assembly and Technical Operations" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-mono text-brandGold block mb-1">01. MATERIAL & ASSEMBY</span>
+                        <h3 class="text-base font-bold text-white">Coil & Insulation Setup</h3>
+                        <p class="text-xs text-brandMuted mt-1">Collaborative preparation of insulation materials and winding accessories.</p>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="group bg-brandCard rounded-xl overflow-hidden border border-gray-800 hover:border-brandGold/50 transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="work2.jpg" alt="HV Winding Operation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-mono text-brandGold block mb-1">02. HV WINDING PROCESS</span>
+                        <h3 class="text-base font-bold text-white">Winding Machine Operation</h3>
+                        <p class="text-xs text-brandMuted mt-1">Operating precision HV winding machinery with digital turn-counter interfaces.</p>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="group bg-brandCard rounded-xl overflow-hidden border border-gray-800 hover:border-brandGold/50 transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="work3.jpg" alt="Safety and Quality Inspection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs font-mono text-brandGold block mb-1">03. SAFETY & INSPECTION</span>
+                        <h3 class="text-base font-bold text-white">In-Process Quality Verification</h3>
+                        <p class="text-xs text-brandMuted mt-1">Adhering to personal protective equipment (PPE) and verifying coil dimensional accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Experience & Process -->
+        <section id="experience" class="bg-brandSurface rounded-2xl p-8 sm:p-10 border border-gray-800 relative overflow-hidden">
+            <div class="text-xs font-bold font-mono tracking-widest text-brandGold uppercase mb-2">PRACTICAL EXPERIENCE</div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-6 uppercase tracking-tight">
+                HIGH VOLTAGE (HV) WINDING SPECIALIZATION
+            </h2>
+
+            <p class="text-brandMuted text-base sm:text-lg leading-relaxed max-w-4xl mb-10">
+                My primary industrial experience centers on High Voltage (HV) winding for power transformers. This technical role requires strict precision in wire tensioning, paper insulation layer management, soldering connections, and dimensional tolerances.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-6 pt-4 border-t border-gray-800">
+                <div class="bg-brandCard/60 rounded-xl p-6 border border-gray-800">
+                    <div class="text-brandGold font-mono font-bold text-sm mb-1">01 - HV WINDING EXECUTION</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Layer & Turn Accuracy</h3>
+                    <p class="text-brandMuted text-sm leading-relaxed">
+                        Executing accurate winding turns according to technical design sheets while maintaining proper tension and layer insulation.
+                    </p>
+                </div>
+
+                <div class="bg-brandCard/60 rounded-xl p-6 border border-gray-800">
+                    <div class="text-brandGold font-mono font-bold text-sm mb-1">02 - QUALITY CONTROL</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Dimensional Integrity</h3>
+                    <p class="text-brandMuted text-sm leading-relaxed">
+                        Ensuring overall coil diameter, height, and lead exits conform strictly to production specifications before assembly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills & Education Grid -->
+        <div class="grid md:grid-cols-12 gap-8">
+            <!-- Technical Skills -->
+            <section id="skills" class="md:col-span-7 bg-brandSurface rounded-2xl p-8 border border-gray-800">
+                <div class="text-xs font-bold font-mono tracking-widest text-brandGold uppercase mb-2">CAPABILITIES</div>
+                <h2 class="text-2xl font-bold text-white mb-6 uppercase font-heading">PRACTICAL SKILLS</h2>
+
+                <ul class="space-y-4">
+                    <li class="flex items-start space-x-3 p-3.5 rounded-lg bg-brandDark/50 border border-gray-800/60">
+                        <i class="fa-solid fa-bolt text-brandGold mt-1"></i>
+                        <span class="text-brandText text-sm sm:text-base font-medium">Power Transformer High Voltage (HV) Winding</span>
+                    </li>
+                    <li class="flex items-start space-x-3 p-3.5 rounded-lg bg-brandDark/50 border border-gray-800/60">
+                        <i class="fa-solid fa-gears text-brandGold mt-1"></i>
+                        <span class="text-brandText text-sm sm:text-base font-medium">HV Winding Machine Operation & Setup</span>
+                    </li>
+                    <li class="flex items-start space-x-3 p-3.5 rounded-lg bg-brandDark/50 border border-gray-800/60">
+                        <i class="fa-solid fa-layer-group text-brandGold mt-1"></i>
+                        <span class="text-brandText text-sm sm:text-base font-medium">Inter-layer Insulation & Conductor Handling</span>
+                    </li>
+                    <li class="flex items-start space-x-3 p-3.5 rounded-lg bg-brandDark/50 border border-gray-800/60">
+                        <i class="fa-solid fa-sliders text-brandGold mt-1"></i>
+                        <span class="text-brandText text-sm sm:text-base font-medium">Industrial Electrical Machine Foundations (Level III)</span>
+                    </li>
+                    <li class="flex items-start space-x-3 p-3.5 rounded-lg bg-brandDark/50 border border-gray-800/60">
+                        <i class="fa-solid fa-clipboard-check text-brandGold mt-1"></i>
+                        <span class="text-brandText text-sm sm:text-base font-medium">Factory Safety Standards, PPE & Quality Discipline</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Education -->
+            <section id="education" class="md:col-span-5 bg-brandCard rounded-2xl p-8 border border-brandGold/30 flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-bold font-mono tracking-widest text-brandGold uppercase mb-2">QUALIFICATIONS</div>
+                    <h2 class="text-2xl font-bold text-white mb-6 uppercase font-heading">EDUCATION</h2>
+
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs text-brandGold font-mono uppercase tracking-wider block mb-1">Institution</span>
+                            <h3 class="text-lg font-bold text-white">Adama Polytechnic College</h3>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 py-2 border-y border-gray-800">
+                            <div>
+                                <span class="text-xs text-brandMuted font-mono block">Level</span>
+                                <span class="font-bold text-white">Level III</span>
+                            </div>
+                            <div>
+                                <span class="text-xs text-brandMuted font-mono block">Completion</span>
+                                <span class="font-bold text-brandGold">2024</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-xs text-brandMuted font-mono block mb-1">Program</span>
+                            <p class="text-sm font-semibold text-white leading-snug">
+                                Industrial Machine Electrical Drive Control Technology
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-4 border-t border-gray-800/80 text-center">
+                    <span class="inline-flex items-center text-xs text-brandGold space-x-2">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Certified Technical Graduate</span>
+                    </span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gradient-to-b from-brandSurface to-brandDark rounded-2xl p-8 sm:p-12 border border-brandGold/40 gold-border-glow">
+            <div class="grid md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-5 space-y-4">
+                    <div class="text-xs font-bold font-mono tracking-widest text-brandGold uppercase">GET IN TOUCH</div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight">CONTACT</h2>
+                    <p class="text-brandGold font-medium italic text-lg">
+                        Open for technical and manufacturing opportunities.
+                    </p>
+                    <p class="text-brandMuted text-sm leading-relaxed">
+                        Feel free to contact me for transformer HV winding operations or technical roles.
+                    </p>
+                </div>
+
+                <div class="md:col-span-7 bg-brandCard/80 p-6 sm:p-8 rounded-xl border border-gray-800 space-y-5">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-brandGold/10 border border-brandGold/30 flex items-center justify-center text-brandGold shrink-0">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <span class="text-xs text-brandMuted font-mono uppercase block">Email</span>
+                            <a href="mailto:danielbekele098@gmail.com" class="text-white hover:text-brandGold font-medium text-sm sm:text-base transition-colors truncate block">
+                                danielbekele098@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-brandGold/10 border border-brandGold/30 flex items-center justify-center text-brandGold shrink-0">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-brandMuted font-mono uppercase block">Phone</span>
+                            <a href="tel:+249990351162" class="text-white hover:text-brandGold font-medium text-sm sm:text-base transition-colors">
+                                +249 990351162
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-lg bg-brandGold/10 border border-brandGold/30 flex items-center justify-center text-brandGold shrink-0">
+                            <i class="fa-solid fa-location-dot text-lg"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-brandMuted font-mono uppercase block">Location</span>
+                            <span class="text-white font-medium text-sm sm:text-base">Khartoum, Sudan</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 pt-2">
+                        <div class="w-12 h-12 rounded-lg bg-brandGold/10 border border-brandGold/30 flex items-center justify-center text-brandGold shrink-0">
+                            <i class="fa-brands fa-linkedin-in text-lg"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <span class="text-xs text-brandMuted font-mono uppercase block">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/daniel-bekele-031729438" target="_blank" rel="noopener noreferrer" class="text-brandGold hover:underline text-xs sm:text-sm truncate block font-mono">
+                                linkedin.com/in/daniel-bekele-031729438
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brandSurface border-t border-gray-800 py-8 text-center text-xs text-brandMuted">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>© 2026 Daniel Bekele. All rights reserved.</p>
+            <p class="mt-2 text-gray-600">Electrical Technician & Transformer HV Winding Specialist</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
